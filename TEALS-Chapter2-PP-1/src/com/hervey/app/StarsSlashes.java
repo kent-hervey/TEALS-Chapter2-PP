@@ -16,7 +16,7 @@ public class StarsSlashes {
 		//Outer loop handles each line; i indicates current line
 		for(int i=1; i <=numberLines; i++) {
 			int numStars = numberLines - i;
-			int numSpaces = i - numberLines -1;
+			int numSpaces = i - 1;
 			int numForwardSlashes = numStars * 2;
 			int numBackSlashes = numSpaces * 2;
 			StarsSlashes.drawStarsQty(numStars);
@@ -33,22 +33,28 @@ public class StarsSlashes {
 	}
 
 	private static void drawBackSlashesQty(int numBackSlashes) {
-		// TODO Auto-generated method stub
+		for(int j=0; j < numBackSlashes; j++) {
+			System.out.print("\\");
+		}
 		
 	}
 
 	private static void drawForwardSlashesQty(int numForwardSlashes) {
-		// TODO Auto-generated method stub
-		
+		for(int j=0; j < numForwardSlashes; j++) {
+			System.out.print("/");
+		}
 	}
 
 	private static void drawSpacesQty(int numSpaces) {
-		// TODO Auto-generated method stub
-		
+		for(int j=0; j < numSpaces; j++) {
+			System.out.print(" ");
+	}
 	}
 
 	private static void drawStarsQty(int numStars) {
-		// TODO Auto-generated method stub
+		for(int j=0; j < numStars; j++) {
+			System.out.print("*");
+		}
 		
 	}
 
